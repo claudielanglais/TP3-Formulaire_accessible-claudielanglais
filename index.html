@@ -3,9 +3,106 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Claudie Langlais">
+        <meta name="description" content="Commander, brochure">
+
         <title>Commander une brochure gratuite</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <!-- Votre code HTML commence ici -->
+        <header class="header">
+            <p class="header__p">Publication gratuite</p>
+            <h1 class="header__titre">Commander une brochure <strong>gratuite</strong></h1>
+        </header>
+        <main class="main">
+            <form class="main__form" action="">
+                <fieldset class="main__fieldset">
+                    <div class="main__titre-section">
+                        <img class="main__icone" src="../images/icon-format-brochure.svg" alt="icône de document" width="5%">
+                        <h2 class="main__sous-titre">Format de la brochure</h2>
+                    </div>
+                    <ul class="main__format">
+                        <li class="main__button">
+                            <button type="button">
+                                <img id="icon-file-print" src="../images/icon-file-print.svg"/>
+                            </button>
+                        </li>
+                        <li class="main__button">
+                            <button type="button">
+                                <img id="icon-file-pdf" src="../images/icon-file-pdf.svg"/>
+                            </button>
+                        </li>
+                        <li class="main__button">
+                            <button type="button">
+                                <img id="icon-file-epub" src="images/icon-file-epub.svg"/>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="main__titre-section">
+                        <img class="main__icone" src="../images/icon-contact.svg" alt="icône de document" width="5%">
+                        <h2 class="main__sous-titre">Informations de contact</h2>
+                    </div>
+                    <div class="main__contact">
+                        <p class="main__champs-contact">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" name="prenom" id="prenom" />
+                        </p>
+                        <p class="main__champs-contact">
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" id="nom" />
+                        </p>
+                        <p class="main__champs-contact">
+                            <label for="courriel">Courriel <strong class="main__exemple">(exemple@domaine.com)</strong></label>
+                            <input type="text" name="courriel" id="courriel" />
+                        </p>
+                        <p class="main__champs-contact">
+                            <label for="telephone">Téléphone <strong class="main__exemple">(555-555-5555)</strong></label>
+                            <input type="text" name="telephone" id="telephone" />
+                        </p>
+                    </div>
+                    <div class="main__titre-section">
+                        <img class="main__icone" src="images/icon-postal.svg" alt="icône de document" width="5%">
+                        <h2 class="main__sous-titre">Informations postales</h2>
+                    </div>
+                    <div class="main__postal">
+                        <p class="main__champs-postal">
+                            <label for="adresse">Adresse</label>
+                            <input type="text" name="adresse" id="adresse"/>
+                        </p>
+                        <p class="main__champs-postal">
+                            <label for="pays">Pays</label>
+                            <select name="pays">
+                                <option value="slectionner"> - Sélectionner - </option>
+                                <option value="canada">Canada</option>
+                                <option value="etats-unis">États-Unis</option>
+                            </select>
+                        </p>
+                        <p class="main__champs-postal">
+                            <label for="province">Province ou État</label>
+                            <select name="province">
+                                <option value="slectionner"> - Sélectionner - </option>
+                                <optgroup label="Canada">
+                                    <option value="AB">Alberta</option>
+                                    <option value="BC">British Columbia</option>
+                                    <option value="QC">Quebec</option>
+                                </optgroup>
+                                <optgroup label="États-Unis">
+                                    <option value="CA">California</option>
+                                    <option value="NY">New York</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <p class="main__champs-postal">
+                            <label for="code">Code postal <strong class="main__exemple">(A1A 1A1)</strong></label>
+                            <input type="text" name="code" id="code"/>
+                        </p>
+                    </div>
+                    <div class="main__cocher-infolettre">
+                        <input name="infolettre" id="infolettre" type="checkbox" value="infolettre" />
+                        <label for="infolettre">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et ressources disponibles.</label>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
     </body>
 </html>
