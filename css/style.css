@@ -83,21 +83,99 @@ img {
 }
 
 /* ------- Validations ------- */
-.icone {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url('../images/good-warning-error.png');
-    background-size: cover;
-    position: relative;
-    top: 3px;
+.message__icone {
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: 57px auto;
+    padding-left: 19px;
 }
-.icone--ok {
-    background-position: 0 0;
+.erreur {
+    background-image: url(../images/good-warning-error.png);
+    background-position: -38px 0; 
 }
-.icone--avertissement {
-    background-position: 49px 0;
+.avertissement {
+    background-image: url(../images/good-warning-error.png);
+    background-position: -19px 0; 
 }
-.icone--erreur {
-    background-position: 99px 0;
+.success {
+    background-image: url(../images/good-warning-error.png);
+    background-position: 1px 0; 
 }
+/*TITRE*/ /*-----------------------------------------------------------------------------------*/
+.body {
+    background-color: rgb(198, 198, 198);
+}
+.header {
+    color: white;
+    margin: -10rem 0 7rem 0;
+    padding: 18rem 0 7rem 0;
+    background-color: rgb(36, 36, 36);
+}
+.header__titre {
+    margin: 0 18rem 0 18rem;
+    text-align: center;
+    font-size: 3.5rem;
+}
+.header__p {
+    margin: 0 18rem 0 18rem;
+    font-size: 1.5rem;
+    opacity: 80%;
+}
+.header__strong {
+    color: rgb(255, 94, 0);
+    font-style: italic;
+}
+/*FORMULAIRE*/ /*-----------------------------------------------------------------------------------*/
+.main {
+    margin: -12rem 18rem 5rem 18rem;
+    background-color: white;
+    border-radius: 2%;
+}
+.main__fieldset {
+    border: none;
+    padding: 0 5rem 2rem 5rem;
+}
+.main__titre-section {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 0 0 1rem;
+}
+.main__icone {
+    background-color: rgb(255, 94, 0);
+    border-radius: 20%;
+    margin: 1rem;
+    padding: 0.3rem;
+    width: 6%;
+    height: 5%;
+}
+/*FORMAT DE LA BROCHURE*/ /*-----------------------------------------------------------------------------------*/
+.main__format {
+    border-top: 2px solid rgb(255, 229, 182);
+    margin-left: 0rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main__radio {
+    list-style-type: none;
+    margin: 0 1rem 1rem 1rem;
+    padding: 1rem 5rem 1rem 5rem;
+    border-radius: 5%;
+    background-color: rgb(255, 248, 239);
+    border: 2px solid rgb(255, 229, 182);
+    text-align: center;
+}
+.main__format .main__radio:first-of-type {
+    margin-left: -1rem;
+}
+.main__radio-button {
+    cursor: pointer;
+}
+.main__radio input:checked{
+    outline: 4px solid rgb(255, 229, 182);
+    border: 3px solid orange;
+    background-color: rgb(255, 229, 182);
+}
+/**/ /*-----------------------------------------------------------------------------------*/
