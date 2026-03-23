@@ -7,80 +7,90 @@
         <meta name="description" content="Commander, brochure">
 
         <title>Commander une brochure gratuite</title>
+        <link rel="normalize" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="body">
         <header class="header">
             <p class="header__p">Publication gratuite</p>
             <h1 class="header__titre">Commander une brochure <strong>gratuite</strong></h1>
         </header>
         <main class="main">
-            <form class="main__form" action="">
+            <form class="main__form" action="index.html" method="get">
                 <fieldset class="main__fieldset">
-                    <div class="main__titre-section">
+                    <legend class="main__titre-section">
                         <img class="main__icone" src="../images/icon-format-brochure.svg" alt="icône de document" width="5%">
                         <h2 class="main__sous-titre">Format de la brochure</h2>
-                    </div>
+                    </legend>
                     <ul class="main__format">
-                        <li class="main__button">
-                            <button type="button">
+                        <li class="main__radio">
+                            <input class="screen-reader-only" type="radio" name="file" id="file-print" required>
+                            <label class="radio__button" for="file-print">
                                 <img id="icon-file-print" src="../images/icon-file-print.svg"/>
-                            </button>
+                            </label>
                         </li>
-                        <li class="main__button">
-                            <button type="button">
+                        <li class="main__radio">
+                            <input class="screen-reader-only" type="radio" name="file" id="file-pdf" required>
+                            <label class="radio__button" for="file-pdf">
                                 <img id="icon-file-pdf" src="../images/icon-file-pdf.svg"/>
-                            </button>
+                            </label>
                         </li>
-                        <li class="main__button">
-                            <button type="button">
+                        <li class="main__radio">
+                            <input class="screen-reader-only" type="radio" name="file" id="file-epub" required>
+                            <label class="radio__button" for="file-epub">
                                 <img id="icon-file-epub" src="images/icon-file-epub.svg"/>
-                            </button>
+                            </label>
                         </li>
                     </ul>
-                    <div class="main__titre-section">
+                    <p class="message__icone avertissement"> Attention</p>
+                </fieldset>
+                <fieldset class="main__fieldset">
+                    <legend class="main__titre-section">
                         <img class="main__icone" src="../images/icon-contact.svg" alt="icône de document" width="5%">
                         <h2 class="main__sous-titre">Informations de contact</h2>
-                    </div>
+                    </legend>
                     <div class="main__contact">
                         <p class="main__champs-contact">
                             <label for="prenom">Prénom</label>
-                            <input type="text" name="prenom" id="prenom" />
+                            <input type="text" name="prenom" id="prenom" required />
                         </p>
                         <p class="main__champs-contact">
                             <label for="nom">Nom</label>
-                            <input type="text" name="nom" id="nom" />
+                            <input type="text" name="nom" id="nom" required/>
                         </p>
                         <p class="main__champs-contact">
                             <label for="courriel">Courriel <strong class="main__exemple">(exemple@domaine.com)</strong></label>
-                            <input type="text" name="courriel" id="courriel" />
+                            <input type="text" name="courriel" id="courriel" required/>
                         </p>
                         <p class="main__champs-contact">
                             <label for="telephone">Téléphone <strong class="main__exemple">(555-555-5555)</strong></label>
-                            <input type="text" name="telephone" id="telephone" />
+                            <input type="text" name="telephone" id="telephone" required/>
                         </p>
                     </div>
-                    <div class="main__titre-section">
+                    <p class="message__icone avertissement"> Attention</p>
+                </fieldset>
+                <fieldset class="main__fieldset">
+                    <legend class="main__titre-section">
                         <img class="main__icone" src="images/icon-postal.svg" alt="icône de document" width="5%">
                         <h2 class="main__sous-titre">Informations postales</h2>
-                    </div>
+                    </legend>
                     <div class="main__postal">
                         <p class="main__champs-postal">
                             <label for="adresse">Adresse</label>
-                            <input type="text" name="adresse" id="adresse"/>
+                            <input type="text" name="adresse" id="adresse" required/>
                         </p>
                         <p class="main__champs-postal">
                             <label for="pays">Pays</label>
-                            <select name="pays">
-                                <option value="slectionner"> - Sélectionner - </option>
+                            <select name="pays" required>
+                                <option value=""> - Sélectionner - </option>
                                 <option value="canada">Canada</option>
                                 <option value="etats-unis">États-Unis</option>
                             </select>
                         </p>
                         <p class="main__champs-postal">
                             <label for="province">Province ou État</label>
-                            <select name="province">
-                                <option value="slectionner"> - Sélectionner - </option>
+                            <select name="province" required>
+                                <option value=""> - Sélectionner - </option>
                                 <optgroup label="Canada">
                                     <option value="AB">Alberta</option>
                                     <option value="BC">British Columbia</option>
@@ -94,14 +104,16 @@
                         </p>
                         <p class="main__champs-postal">
                             <label for="code">Code postal <strong class="main__exemple">(A1A 1A1)</strong></label>
-                            <input type="text" name="code" id="code"/>
+                            <input type="text" name="code" id="code" required/>
                         </p>
                     </div>
-                    <div class="main__cocher-infolettre">
-                        <input name="infolettre" id="infolettre" type="checkbox" value="infolettre" />
-                        <label for="infolettre">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et ressources disponibles.</label>
-                    </div>
+                    <p class="message__icone avertissement"> Attention</p>
                 </fieldset>
+                <div class="main__cocher-infolettre">
+                    <input name="infolettre" id="infolettre" type="checkbox" value="infolettre" />
+                    <label for="infolettre">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et ressources disponibles.</label>
+                </div>
+                <input type="submit" name="btnCommander" value="Commander" />
             </form>
         </main>
     </body>
