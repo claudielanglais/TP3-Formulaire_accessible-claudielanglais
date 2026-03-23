@@ -134,12 +134,13 @@ img {
 }
 .main__fieldset {
     border: none;
-    padding: 0 5rem 2rem 5rem;
+    padding: 0rem 5rem 2rem 5rem;
+    margin-top: -2rem;
 }
 .main__titre-section {
     display: flex;
     flex-direction: row;
-    padding: 1.5rem 0 0 1rem;
+    padding: rem 0 0 1rem;
 }
 .main__icone {
     background-color: rgb(255, 94, 0);
@@ -178,4 +179,22 @@ img {
     border: 3px solid orange;
     background-color: rgb(255, 229, 182);
 }
-/**/ /*-----------------------------------------------------------------------------------*/
+/*INFORMATION DE CONTACT*/ /*-----------------------------------------------------------------------------------*/
+.main__contact {
+    border-top: 2px solid rgb(255, 229, 182);
+}
+.main__nom-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main__champs-contact {
+    display: flex;
+    flex-direction: column;
+}
+.main__champs-contact input {
+    background-color: rgb(255, 248, 239);
+    border: 2px solid rgb(255, 229, 182);
+    border-radius: 5px;
+    height: 2.5rem;
+}
