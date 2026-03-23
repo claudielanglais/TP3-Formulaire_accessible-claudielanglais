@@ -45,7 +45,7 @@
                             </label>
                         </li>
                     </ul>
-                    <p class="message__icone"></p>
+                    <p class="message__icone">erreur</p>
                 </fieldset>
                 <fieldset class="main__fieldset">
                     <legend class="main__titre-section">
@@ -53,14 +53,16 @@
                         <h2 class="main__sous-titre">Informations de contact</h2>
                     </legend>
                     <div class="main__contact">
-                        <p class="main__champs-contact">
-                            <label for="prenom">Prénom</label>
-                            <input type="text" name="prenom" id="prenom" required />
-                        </p>
-                        <p class="main__champs-contact">
-                            <label for="nom">Nom</label>
-                            <input type="text" name="nom" id="nom" required/>
-                        </p>
+                        <div class="main__nom-contact">
+                            <p class="main__champs-contact">
+                                <label for="prenom">Prénom</label>
+                                <input type="text" name="prenom" id="prenom" required />
+                            </p>
+                            <p class="main__champs-contact">
+                                <label for="nom">Nom</label>
+                                <input type="text" name="nom" id="nom" required/>
+                            </p>
+                        </div>
                         <p class="main__champs-contact">
                             <label for="courriel">Courriel <strong class="main__exemple">(exemple@domaine.com)</strong></label>
                             <input type="text" name="courriel" id="courriel" required/>
