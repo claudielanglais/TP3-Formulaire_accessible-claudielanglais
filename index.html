@@ -13,7 +13,7 @@
     <body class="body">
         <header class="header">
             <p class="header__p">Publication gratuite</p>
-            <h1 class="header__titre">Commander une brochure <strong>gratuite</strong></h1>
+            <h1 class="header__titre">Commander une <strong class="header__strong">brochure</strong> gratuite</h1>
         </header>
         <main class="main">
             <form class="main__form" action="index.html" method="get">
@@ -25,24 +25,27 @@
                     <ul class="main__format">
                         <li class="main__radio">
                             <input class="screen-reader-only" type="radio" name="file" id="file-print" required>
-                            <label class="radio__button" for="file-print">
+                            <label class="main__radio-button" for="file-print">
                                 <img id="icon-file-print" src="../images/icon-file-print.svg"/>
+                                <p class="main__p">Imprimé</p>
                             </label>
                         </li>
                         <li class="main__radio">
                             <input class="screen-reader-only" type="radio" name="file" id="file-pdf" required>
-                            <label class="radio__button" for="file-pdf">
+                            <label class="main__radio-button" for="file-pdf">
                                 <img id="icon-file-pdf" src="../images/icon-file-pdf.svg"/>
+                                <p class="main__p">PDF</p>
                             </label>
                         </li>
                         <li class="main__radio">
                             <input class="screen-reader-only" type="radio" name="file" id="file-epub" required>
-                            <label class="radio__button" for="file-epub">
+                            <label class="main__radio-button" for="file-epub">
                                 <img id="icon-file-epub" src="images/icon-file-epub.svg"/>
+                                <p class="main__p">ePub</p>
                             </label>
                         </li>
                     </ul>
-                    <p class="message__icone avertissement"> Attention</p>
+                    <p class="message__icone"></p>
                 </fieldset>
                 <fieldset class="main__fieldset">
                     <legend class="main__titre-section">
@@ -67,7 +70,7 @@
                             <input type="text" name="telephone" id="telephone" required/>
                         </p>
                     </div>
-                    <p class="message__icone avertissement"> Attention</p>
+                    <p class="message__icone"></p>
                 </fieldset>
                 <fieldset class="main__fieldset">
                     <legend class="main__titre-section">
@@ -107,13 +110,15 @@
                             <input type="text" name="code" id="code" required/>
                         </p>
                     </div>
-                    <p class="message__icone avertissement"> Attention</p>
+                    <p class="message__icone"></p>
                 </fieldset>
-                <div class="main__cocher-infolettre">
-                    <input name="infolettre" id="infolettre" type="checkbox" value="infolettre" />
-                    <label for="infolettre">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et ressources disponibles.</label>
-                </div>
-                <input type="submit" name="btnCommander" value="Commander" />
+                <fieldset class="main__fieldset">
+                    <div class="main__cocher-infolettre">
+                        <input name="infolettre" id="infolettre" type="checkbox" value="infolettre" />
+                        <label for="infolettre">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et ressources disponibles.</label>
+                    </div>
+                    <input type="submit" name="btnCommander" value="Commander" />
+                </fieldset>
             </form>
         </main>
     </body>
