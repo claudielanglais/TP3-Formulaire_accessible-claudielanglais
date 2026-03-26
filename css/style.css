@@ -113,12 +113,12 @@ img {
     background-color: rgb(36, 36, 36);
 }
 .header__titre {
-    margin: 0 18rem 0 18rem;
+    margin: 0 1rem 0 1rem;
     text-align: center;
     font-size: 3.5rem;
 }
 .header__p {
-    margin: 0 18rem 0 18rem;
+    margin: 0 1rem 0 1rem;
     font-size: 1.5rem;
     opacity: 80%;
 }
@@ -126,11 +126,19 @@ img {
     color: rgb(255, 94, 0);
     font-style: italic;
 }
+@media (min-width:64rem) {
+    .header__titre {
+        margin: 0 18rem 0 18rem;
+    }
+    .header__p {
+        margin: 0 18rem 0 18rem;
+    }
+}
 /*FORMULAIRE*/ /*-----------------------------------------------------------------------------------*/
 .main {
-    margin: -12rem 18rem 5rem 18rem;
+    margin: -12rem 1rem 5rem 1rem;
     background-color: white;
-    border-radius: 2%;
+    border-radius: 15px;
 }
 .main__fieldset {
     border: none;
@@ -150,51 +158,16 @@ img {
     width: 6%;
     height: 5%;
 }
+@media (min-width:64rem) {
+    .main {
+        margin: -12rem 18rem 5rem 18rem;
+    }
+}
 /*FORMAT DE LA BROCHURE*/ /*-----------------------------------------------------------------------------------*/
-.main__format {
-    border-top: 2px solid rgb(255, 229, 182);
-    margin-left: 0rem;
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.main__radio {
-    list-style-type: none;
-    margin: 0 1rem 1rem 1rem;
-    padding: 1rem 5rem 1rem 5rem;
-    border-radius: 5%;
-    background-color: rgb(255, 248, 239);
-    border: 2px solid rgb(255, 229, 182);
-    text-align: center;
-}
-.main__format .main__radio:first-of-type {
-    margin-left: -1rem;
-}
-.main__radio-button {
-    cursor: pointer;
-}
-.main__radio input:checked{
+
+/* .main__radio input:checked{
     outline: 4px solid rgb(255, 229, 182);
     border: 3px solid orange;
     background-color: rgb(255, 229, 182);
-}
+} */
 /*INFORMATION DE CONTACT*/ /*-----------------------------------------------------------------------------------*/
-.main__contact {
-    border-top: 2px solid rgb(255, 229, 182);
-}
-.main__nom-contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.main__champs-contact {
-    display: flex;
-    flex-direction: column;
-}
-.main__champs-contact input {
-    background-color: rgb(255, 248, 239);
-    border: 2px solid rgb(255, 229, 182);
-    border-radius: 5px;
-    height: 2.5rem;
-}
