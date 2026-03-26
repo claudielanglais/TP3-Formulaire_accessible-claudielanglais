@@ -109,7 +109,7 @@ img {
 }
 /*TITRE*/ /*-----------------------------------------------------------------------------------*/
 .body {
-    background: rgb(198, 198, 198);
+    background: rgb(227, 223, 216);
 }
 .header {
     color: white;
@@ -153,7 +153,6 @@ img {
 .main__titre-section {
     display: flex;
     flex-direction: row;
-    padding: 1rem 0 0 1rem;
 }
 .main__icone {
     background-color: rgb(255, 94, 0);
@@ -163,19 +162,112 @@ img {
     width: 40px;
     height: 40px;
 }
+.main__sous-titre {
+    text-transform: uppercase;
+    padding-top: 0.2rem;
+}
+.main__exemple {
+    color: rgb(37, 37, 37);
+    opacity: 85%;
+    font-weight: 500;
+}
 @media (min-width:64rem) {
     .main {
         margin: -12rem 20% 5rem 20%;
     }
     .main__fieldset {
-        padding: 0rem 5rem 2rem 5rem;
-}
+        padding: 0rem 3rem 2rem 3rem;
+    }
 }
 /*FORMAT DE LA BROCHURE*/ /*-----------------------------------------------------------------------------------*/
+.main__format {
+    list-style: none;
+}
 
-/* .main__radio input:checked{
-    outline: 4px solid rgb(255, 229, 182);
-    border: 3px solid orange;
-    background-color: rgb(255, 229, 182);
-} */
-/*INFORMATION DE CONTACT*/ /*-----------------------------------------------------------------------------------*/
+/*INFORMATIONs DE CONTACT*/ /*-----------------------------------------------------------------------------------*/
+.main__contact {
+    margin: 0 1rem 0 1rem;
+    border-top: 2px solid rgb(227, 223, 216);
+}
+.main__champs-contact {
+    display:flex;
+    flex-direction: column;
+}
+.main__champs-contact input {
+    background-color: rgb(255, 252, 248);
+    border: 2px solid rgb(227, 223, 216);
+    border-radius: 10px;
+    height: 3rem;
+}
+.main__champs-contact label {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+@media (min-width:64rem) {
+    .main__nom-contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 -0.3rem 0 -1rem;
+    }
+    .main__nom-contact .main__champs-contact {
+        margin-left: 1rem;
+        flex: 1 1 calc(48% - 1rem);
+    }
+}
+/*INFORMATIONs POSTALES*/ /*-----------------------------------------------------------------------------------*/
+.main__postal {
+    margin: 0 1rem 0 1rem;
+    border-top: 2px solid rgb(227, 223, 216);
+}
+.main__champs-postal {
+    display:flex;
+    flex-direction: column;
+}
+.main__champs-postal input,
+.main__champs-postal select {
+    background-color: rgb(255, 252, 248);
+    border: 2px solid rgb(227, 223, 216);
+    border-radius: 10px;
+    height: 3rem;
+}
+.main__champs-postal label {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+@media (min-width:64rem) {
+    .main__pays-postal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 -0.3rem 0 -1rem;
+    }
+    .main__pays-postal .main__champs-postal {
+        margin-left: 1rem;
+        flex: 1 1 calc(48% - 1rem);
+    }
+}
+/*INFOLETTRE ET BOUTON*/ /*-----------------------------------------------------------------------------------*/
+.main__cocher-infolettre {
+    background-color: rgb(227, 223, 216);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0 1rem 1rem 1rem;
+    
+}
+.main__button {
+    display: flex;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 0 1rem 1rem 1rem;
+    padding: 1rem 3rem 1rem 1rem;
+    text-align: right;
+    box-shadow: 0px 0px 5px rgb(255, 178, 134);
+    justify-self: end;
+    background-color: rgb(255, 94, 0);
+    background-image: url(../images/icon-arrow.svg);
+    background-repeat:no-repeat;
+    background-position: 95% 50%;
+    background-size: 1.5rem;
+}
