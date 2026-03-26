@@ -84,34 +84,36 @@
                     </legend>
                     <div class="main__postal">
                         <div class="main__champs-postal">
-                            <label for="adresse">Adresse</label>
+                            <label for="adresse">Adresse <strong class="main__exemple">(123, rue Principale)</strong></label>
                             <input type="text" name="adresse" id="adresse" required/>
                             <p class="message__icone" area-live="assertive"></p>
                         </div>
-                        <div class="main__champs-postal">
-                            <label for="pays">Pays</label>
-                            <select name="pays" required>
-                                <option value=""> - Sélectionner - </option>
-                                <option value="canada">Canada</option>
-                                <option value="etats-unis">États-Unis</option>
-                            </select>
-                            <p class="message__icone" area-live="assertive"></p>
-                        </div>
-                        <div class="main__champs-postal">
-                            <label for="province">Province ou État</label>
-                            <select name="province" required>
-                                <option value=""> - Sélectionner - </option>
-                                <optgroup label="Canada">
-                                    <option value="AB">Alberta</option>
-                                    <option value="BC">British Columbia</option>
-                                    <option value="QC">Quebec</option>
-                                </optgroup>
-                                <optgroup label="États-Unis">
-                                    <option value="CA">California</option>
-                                    <option value="NY">New York</option>
-                                </optgroup>
-                            </select>
-                            <p class="message__icone" area-live="assertive"></p>
+                        <div class="main__pays-postal">
+                            <div class="main__champs-postal">
+                                <label for="pays">Pays</label>
+                                <select name="pays" required>
+                                    <option value=""> - Sélectionner - </option>
+                                    <option value="canada">Canada</option>
+                                    <option value="etats-unis">États-Unis</option>
+                                </select>
+                                <p class="message__icone" area-live="assertive"></p>
+                            </div>
+                            <div class="main__champs-postal">
+                                <label for="province">Province ou État</label>
+                                <select name="province" required>
+                                    <option value=""> - Sélectionner - </option>
+                                    <optgroup label="Canada">
+                                        <option value="AB">Alberta</option>
+                                        <option value="BC">British Columbia</option>
+                                        <option value="QC">Quebec</option>
+                                    </optgroup>
+                                    <optgroup label="États-Unis">
+                                        <option value="CA">California</option>
+                                        <option value="NY">New York</option>
+                                    </optgroup>
+                                </select>
+                                <p class="message__icone" area-live="assertive"></p>
+                            </div>
                         </div>
                         <div class="main__champs-postal">
                             <label for="code">Code postal <strong class="main__exemple">(A1A 1A1)</strong></label>
@@ -125,7 +127,7 @@
                         <input name="infolettre" id="infolettre" type="checkbox" value="infolettre" />
                         <label for="infolettre">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et ressources disponibles.</label>
                     </div>
-                    <input type="submit" name="btnCommander" value="Commander" />
+                    <input class="main__button" type="submit" name="btnCommander" value="Commander" />
                 </fieldset>
             </form>
         </main>
