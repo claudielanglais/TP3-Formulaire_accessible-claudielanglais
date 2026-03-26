@@ -19,21 +19,21 @@
             <form class="main__form" action="index.html" method="get">
                 <fieldset class="main__fieldset">
                     <legend class="main__titre-section">
-                        <img class="main__icone" src="images/icon-format-brochure.svg" alt="icône de document" width="5%">
+                        <img class="main__icone" src="images/icon-format-brochure.svg" alt="" width="5%">
                         <h2 class="main__sous-titre">Format de la brochure</h2>
                     </legend>
                     <ul class="main__format">
                         <li class="main__radio">
                             <input class="screen-reader-only" type="radio" name="file" id="file-print" required>
                             <label class="main__radio-button" for="file-print">
-                                <img id="icon-file-print" src="images/icon-file-print.svg" alt="Icon pour imprimé"/>
+                                <img id="icon-file-print" src="images/icon-file-print.svg" alt=""/>
                                 <p class="main__p">Imprimé</p>
                             </label>
                         </li>
                         <li class="main__radio">
                             <input class="screen-reader-only" type="radio" name="file" id="file-pdf" required>
                             <label class="main__radio-button" for="file-pdf">
-                                <img id="icon-file-pdf" src="images/icon-file-pdf.svg" alt="Icon pour pdf"/>
+                                <img id="icon-file-pdf" src="images/icon-file-pdf.svg" alt=""/>
                                 <p class="main__p">PDF</p>
                             </label>
                         </li>
@@ -45,7 +45,7 @@
                             </label>
                         </li>
                     </ul>
-                    <p class="message__icone">erreur</p>
+                    <p class="message__icone" area-live="assertive"></p>
                 </fieldset>
                 <fieldset class="main__fieldset">
                     <legend class="main__titre-section">
@@ -54,25 +54,28 @@
                     </legend>
                     <div class="main__contact">
                         <div class="main__nom-contact">
-                            <p class="main__champs-contact">
+                            <div class="main__champs-contact">
                                 <label for="prenom">Prénom</label>
                                 <input type="text" name="prenom" id="prenom" required />
-                            </p>
-                            <p class="main__champs-contact">
+                                <p class="message__icone" area-live="assertive"></p>
+                            </div>
+                            <div class="main__champs-contact">
                                 <label for="nom">Nom</label>
                                 <input type="text" name="nom" id="nom" required/>
-                            </p>
+                                <p class="message__icone" area-live="assertive"></p>
+                            </div>
                         </div>
-                        <p class="main__champs-contact">
+                        <div class="main__champs-contact">
                             <label for="courriel">Courriel <strong class="main__exemple">(exemple@domaine.com)</strong></label>
                             <input type="text" name="courriel" id="courriel" required/>
-                        </p>
-                        <p class="main__champs-contact">
+                            <p class="message__icone" area-live="assertive"></p>
+                        </div>
+                        <div class="main__champs-contact">
                             <label for="telephone">Téléphone <strong class="main__exemple">(555-555-5555)</strong></label>
                             <input type="text" name="telephone" id="telephone" required/>
-                        </p>
+                            <p class="message__icone" area-live="assertive"></p>
+                        </div>
                     </div>
-                    <p class="message__icone"></p>
                 </fieldset>
                 <fieldset class="main__fieldset">
                     <legend class="main__titre-section">
@@ -80,19 +83,21 @@
                         <h2 class="main__sous-titre">Informations postales</h2>
                     </legend>
                     <div class="main__postal">
-                        <p class="main__champs-postal">
+                        <div class="main__champs-postal">
                             <label for="adresse">Adresse</label>
                             <input type="text" name="adresse" id="adresse" required/>
-                        </p>
-                        <p class="main__champs-postal">
+                            <p class="message__icone" area-live="assertive"></p>
+                        </div>
+                        <div class="main__champs-postal">
                             <label for="pays">Pays</label>
                             <select name="pays" required>
                                 <option value=""> - Sélectionner - </option>
                                 <option value="canada">Canada</option>
                                 <option value="etats-unis">États-Unis</option>
                             </select>
-                        </p>
-                        <p class="main__champs-postal">
+                            <p class="message__icone" area-live="assertive"></p>
+                        </div>
+                        <div class="main__champs-postal">
                             <label for="province">Province ou État</label>
                             <select name="province" required>
                                 <option value=""> - Sélectionner - </option>
@@ -106,13 +111,14 @@
                                     <option value="NY">New York</option>
                                 </optgroup>
                             </select>
-                        </p>
-                        <p class="main__champs-postal">
+                            <p class="message__icone" area-live="assertive"></p>
+                        </div>
+                        <div class="main__champs-postal">
                             <label for="code">Code postal <strong class="main__exemple">(A1A 1A1)</strong></label>
                             <input type="text" name="code" id="code" required/>
-                        </p>
+                            <p class="message__icone" area-live="assertive"></p>
+                        </div>
                     </div>
-                    <p class="message__icone"></p>
                 </fieldset>
                 <fieldset class="main__fieldset">
                     <div class="main__cocher-infolettre">
