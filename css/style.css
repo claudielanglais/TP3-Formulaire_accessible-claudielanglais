@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 /**
- * @author X <X@csfoy.ca>
+ * @author Claudie Langlais <2239635@csfoy.ca>
  *
  * TABLE DES MATIERES
  *
@@ -26,9 +26,14 @@
 /* ------- Variables ------- */
 :root {
     /* Couleurs */
-    --couleur-primaire: ?;
-    --couleur-secondaire: ?;
-    --couleur-tertiaire: ?;
+    --couleur-primaire: rgb(36, 36, 36);
+    --couleur-secondaire: white;
+    --couleur-tertiaire: rgb(255, 94, 0);
+
+    /*
+    * Contraste:
+    * 
+    */
 }
 
 /* ------- Styles de base ------- */
@@ -104,21 +109,20 @@ img {
 }
 /*TITRE*/ /*-----------------------------------------------------------------------------------*/
 .body {
-    background-color: rgb(198, 198, 198);
+    background: rgb(198, 198, 198);
 }
 .header {
     color: white;
     margin: -10rem 0 7rem 0;
     padding: 18rem 0 7rem 0;
-    background-color: rgb(36, 36, 36);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(37, 37, 37));
 }
 .header__titre {
-    margin: 0 1rem 0 1rem;
-    text-align: center;
+    margin: 0 1.5rem 0 1.5rem;
     font-size: 3.5rem;
 }
 .header__p {
-    margin: 0 1rem 0 1rem;
+    margin: 0 1.5rem 0 1.5rem;
     font-size: 1.5rem;
     opacity: 80%;
 }
@@ -129,6 +133,7 @@ img {
 @media (min-width:64rem) {
     .header__titre {
         margin: 0 18rem 0 18rem;
+        text-align: center;
     }
     .header__p {
         margin: 0 18rem 0 18rem;
@@ -142,26 +147,29 @@ img {
 }
 .main__fieldset {
     border: none;
-    padding: 0rem 5rem 2rem 5rem;
+    padding: 0rem 1rem 2rem 1rem;
     margin-top: -2rem;
 }
 .main__titre-section {
     display: flex;
     flex-direction: row;
-    padding: rem 0 0 1rem;
+    padding: 1rem 0 0 1rem;
 }
 .main__icone {
     background-color: rgb(255, 94, 0);
     border-radius: 20%;
     margin: 1rem;
     padding: 0.3rem;
-    width: 6%;
-    height: 5%;
+    width: 40px;
+    height: 40px;
 }
 @media (min-width:64rem) {
     .main {
-        margin: -12rem 18rem 5rem 18rem;
+        margin: -12rem 20% 5rem 20%;
     }
+    .main__fieldset {
+        padding: 0rem 5rem 2rem 5rem;
+}
 }
 /*FORMAT DE LA BROCHURE*/ /*-----------------------------------------------------------------------------------*/
 
